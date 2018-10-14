@@ -12,5 +12,5 @@ include("cmake/cppcheck.cmake")
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
-add_executable(${PROJECT_NAME} "src/main.cpp")
-add_executable(${PROJECT_NAME}Test "test/main.cpp")
+add_subdirectory(src)
+add_subdirectory(test)
