@@ -1,7 +1,8 @@
 add_library(lib${PROJECT_NAME}
     "color.hpp"
     "image.hpp"
-    "image.cpp")
+    "image.cpp"
+    "ray.hpp")
 
 target_include_directories(lib${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
